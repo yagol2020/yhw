@@ -1,0 +1,94 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: 杨慧文
+title: yhw_yagol@bistu.edu.cn
+
+darkmode: false
+
+github_username:  yagol2020
+
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  <font size="5"> 硕士研究生，就读于北京信息科技大学计算机学院。研究方向为区块链智能合约安全漏洞挖掘，包括智能合约的漏洞预测、检测、定位以及修复等工作，涉及静态分析、符号执行和模糊测试等软件分析与缺陷检测技术。导师为崔展齐副教授 </font>
+
+content:
+  - title: 参与项目
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - 国家自然科学基金，基于隐式编程规则挖掘的安全缺陷检测及自动修复，61702041，2018/01-2020/12
+      - 江苏省前沿引领技术基础研究专项，人机物深度融合高可信网构软件技术、理论与方法（子课题），BK20202001，2020/10-2025/09
+      - 北京市教委科技计划项目，目标制导的安全缺陷自动检测及确认技术研究，KM201811232016，2018/01-2019/12
+      - 北京信息科技大学“勤信人才”培育计划项目，静动态结合的Android 应用测试技术研究，QXTCPC201906，2019/01-2021/12
+  - title: 科研成果
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - 杨慧文, 崔展齐*, 陈翔, 贾明华, 郑丽伟, 刘建宾. 基于软件度量的Solidity智能合约缺陷预测方法. 软件学报, 2022, 33(05): 1587-1611.
+      - 杨慧文, 崔展齐*, 陈翔, 郑丽伟, 刘建宾. 基于目标制导符号执行的智能合约安全漏洞检测方法.(ChinaSoft2020“约束求解与定理证明”Track，在审)
+      - 崔展齐, 杨慧文, 陈翔, 王林章*. 智能合约安全漏洞检测研究进展. (软件学报，在审)
+      - 杨慧文, 崔展齐, 贾明华, 刘秀磊, 刘建宾, 郑丽伟. 面向Solidity智能合约的缺陷预测方法. 202011562073.1(专利)
+  - title: 研究/课题经历
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: 基于软件度量的Solidity智能合约缺陷预测方法
+        description: | # this will include new lines to allow paragraphs
+                  本方法从智能合约的代码结构、特殊全局变量以及函数等角度出发，借鉴软件缺陷预测技术的思想以及已有的代码度量元，提出一组用于描述智能合约代码特征的度量元集，通过自动化测试工具对智能合约进行检测获得缺陷标签，以训练智能合约缺陷倾向性/数量预测模型，对合约中有无缺陷和缺陷数量进行预测。本人构建并开源了智能合约缺陷预测数据集，从机器学习模型性能、具体缺陷类型预测场景以及类不平衡对预测模型性能的影响等多个角度进行实验，验证了方法的有效性。
+      - layout: top
+        title: 基于目标制导符号执行的智能合约安全漏洞检测方法
+        description: | # this will include new lines to allow paragraphs
+                  针对基于符号执行的智能合约安全漏洞检测工具效率较低的问题，本方法提出利用目标制导技术优化符号执行的路径探索策略，剪枝与目标语句无关的路径从而提高漏洞检测效率。此外，提出状态变量依赖分析，用以提高符号执行对于存在状态变量的路径条件判断的准确性。本人构建并开源了原型工具Smart-Target，并在人工标注的真实合约数据集中进行实验，验证了本方法的有效性。
+      - layout: top
+        title: 基于目标制导符号执行的智能合约安全漏洞检测方法
+        description: | # this will include new lines to allow paragraphs
+                  针对基于符号执行的智能合约安全漏洞检测工具效率较低的问题，本方法提出利用目标制导技术优化符号执行的路径探索策略，剪枝与目标语句无关的路径从而提高漏洞检测效率。此外，提出状态变量依赖分析，用以提高符号执行对于存在状态变量的路径条件判断的准确性。本人构建并开源了原型工具Smart-Target，并在人工标注的真实合约数据集中进行实验，验证了本方法的有效性。
+              
+      - layout: top
+        title: 智能合约安全漏洞检测研究进展
+        description: | # this will include new lines to allow paragraphs
+                  本文梳理了智能合约安全漏洞检测的研究框架，从漏洞发现与识别、漏洞分析与检测、数据集与评价指标共3个角度逐层递进地阐述和分析现有智能合约安全漏洞检测的研究进展。相较于已有的综述及研究框架，本文将研究进展的分析范围扩展到整个检测流程，补充了26种漏洞模式并将已知漏洞归纳为13种漏洞类型，提出了可扩展的漏洞分类框架，从机器学习、静态分析和模糊测试等5个技术角度描述了现有工作的优势与局限性，总结了开源数据集和常用评价指标，并对智能合约安全漏洞检测领域的未来研究方向提出了展望。
+
+      - layout: top
+        title: 基于模糊测试的复杂软件循环代码自动测试技术研究
+        description: | # this will include new lines to allow paragraphs
+                  本项目针对软件程序中的循环代码结构进行模糊测试，提出基于组合覆盖的循环代码测试充分性评价准则，并通过目标制导和层次式适应度评价等方法提高测试效率。本人参与并实现了基于全连接神经网络制导的模糊测试工具，将测试用例字节序列和各基本块的覆盖情况作为特征和标签，训练全连接神经网络，通过计算各神经元权重坐标之间的距离量化字节序列与基本块之间的关联关系，根据量化结果分配字节变异概率，从而针对覆盖情况较差的基本块生成高质量测试用例，以提高覆盖率。
+  - title: 项目经历
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: 数据协同系统开发
+        caption: 2021年04月 - 2021年06月
+        description: | # this will include new lines to allow paragraphs
+                  本人参与并实现了该项目的开发与测试工作，主要负责开发数据预处理模块、持久化存储模块和备份模块，以及对数据采集/数据监控模块进行系统测试。
+                  - 数据预处理模块：按特定字段、时间戳或表单操作的数据去重，按预先规定的字段标准对各数据字段进行规则校验，将合法数据转移到指定数据库
+                  - 持久化存储模块：按照处理批次，将经过关联的各数据表持久化存储到达梦数据库
+                  - 备份模块：根据协同处理的结果定位成功发送的数据，分配备份批次号并存储到Hive大数据库中
+                  - 数据采集/系统监控模块：对前端数据采集、后端数据转换与处理、系统监控相关功能进行系统测试，编写测试用例和测试脚本
+      - layout: top
+        title: 开源软件-文献爬虫工具
+        caption: 2020年12月 - 至今
+        link: https://github.com/yagol2020/PaperWebCrawler
+        description: | # this will include new lines to allow paragraphs
+                  文献搜集与整理过程中通常需要浏览多个在线数据库，如IEEE、ACM或Springer等，但不同数据库的搜索机制不同，且发表年份、发表源或影响因子等不便于或无法直接查看。为了解决这个问题，本人基于Selenium API实现了文献网站爬虫框架，通过统一的搜索窗口直接获得IEEE等文献数据库的信息，包括但不限于标题、摘要、发表源、发表年份、影响因子等
+                  * Maven + Selenium + Java swing
+                  * Github有10个star，Gitee有2个star
+
+
+# Footer
+footer_show_references: true
+references_title: 个人简介
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
